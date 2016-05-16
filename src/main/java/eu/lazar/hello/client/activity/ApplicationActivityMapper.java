@@ -35,7 +35,7 @@ public class ApplicationActivityMapper implements ActivityMapper {
   @Override
   public Activity getActivity(Place place) {
     Activity activity = null;
-    
+    System.out.println();
     if (place instanceof HomePlace) {
       activity = new HomeActivity((HomePlace) place, clientFactory);
     } else if (place instanceof LoginPlace) {
